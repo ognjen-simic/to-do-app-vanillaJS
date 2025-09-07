@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: hsl(84, 65%, 36%);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+main {
+    height: 77vh;
+    background-color: greenyellow;
+    padding-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: hsl(84, 65%, 36%);
+}
+
+#input {
+    display: flex;
+    width: 85vw;
+    height: 4vh;
+    padding: 0 8px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    font-weight: bold;
+}
+
+#add-btn {
+    background-color: hsl(120, 85%, 56%);
+    border: none;
+    width: 10vw;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    background-color: hsl(120, 78%, 32%);
+    max-width: 80vw;
+    padding: 10px 10px;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: hsl(118, 86%, 6%);
+    box-shadow: 2px 2px 5px black;
+    min-width: 500px;
+
+    display: flex;
+    align-items: center;
+}
+
+#checkbox {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+#checkbox:checked::after {
+    content: "✔";
+    font-size: 30px;
+    position: absolute;
+    top: -12px;
+    left: 0px;
+}
+
+#checkbox:checked {
+    border: none;
+}
+
+.delbox {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    background-color: rgb(216, 42, 42);
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+}

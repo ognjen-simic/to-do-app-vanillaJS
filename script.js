@@ -7,7 +7,11 @@ add_btn.addEventListener("click", () => {
 
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.id = "checkbox";
+    checkbox.className = "checkbox";
+
+    let taskText = document.createElement("span");
+    taskText.className = "textbox"
+    taskText.textContent = input.value;
 
     let delbox = document.createElement("button");
     delbox.className = "delbox";
@@ -19,7 +23,7 @@ add_btn.addEventListener("click", () => {
 
     if (input.value !== "")
     {
-        li.append(checkbox, input.value, delbox);
+        li.append(checkbox, taskText, delbox);
         list.append(li);
         input.value = "";
     }

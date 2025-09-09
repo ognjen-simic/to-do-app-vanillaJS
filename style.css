@@ -64,13 +64,21 @@ li {
     font-family: Arial, sans-serif;
     color: hsl(118, 86%, 6%);
     box-shadow: 2px 2px 5px black;
-    min-width: 500px;
+    min-width: 25vw;
+    word-wrap: break-word;
 
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
-#checkbox {
+.textbox {
+    flex: 1 1 auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.checkbox {
     margin-right: 10px;
     appearance: none;
     width: 20px;
@@ -79,9 +87,11 @@ li {
     border-radius: 4px;
     cursor: pointer;
     position: relative;
+    display: flex;
+    flex: 0 0 auto;
 }
 
-#checkbox:checked::after {
+.checkbox:checked::after {
     content: "✔";
     font-size: 30px;
     position: absolute;
@@ -89,7 +99,7 @@ li {
     left: 0px;
 }
 
-#checkbox:checked {
+.checkbox:checked {
     border: none;
 }
 
